@@ -45,12 +45,14 @@ cd ..
 
 #libev (all)
 
-wget http://dist.schmorp.de/libev/libev-4.11.tar.gz
-tar xfz libev-4.11.tar.gz
-cd libev-4.11  || exit 1
+wget http://dist.schmorp.de/libev/Attic/libev-4.04.tar.gz
+tar xfz libev-4.04.tar.gz
+cd libev-4.04  || exit 1
 ./configure --prefix=/opt/dionaea
 make install
 cd ..
+
+
 
 
 #Python3

@@ -1,0 +1,2 @@
+  sudo p0f -i any -u root -Q /tmp/p0f.sock -q -l -d -o /dev/null -c 1024 && sudo chown nobody /tmp/p0f.sock
+  sudo /opt/dionaea/bin/dionaea -u nobody -g nogroup -p /opt/dionaea/var/dionaea.pid -D

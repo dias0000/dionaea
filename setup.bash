@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 aptitude install libudns-dev libglib2.0-dev libssl-dev libcurl4-openssl-dev \
 libreadline-dev libsqlite3-dev python-dev \
@@ -10,7 +10,7 @@ pkg-config p0f
 mkdir /opt/dionaea
 
 
-# liblcfg (all)
+# liblcfg (todo)
 
 git clone git://git.carnivore.it/liblcfg.git liblcfg
 cd liblcfg/code || exit 1
@@ -21,7 +21,7 @@ cd ..
 cd ..
 
 
-#libemu (all)
+#libemu (todo)
 
 git clone git://git.carnivore.it/libemu.git libemu
 cd libemu || exit 1
@@ -31,7 +31,7 @@ make install
 cd ..
 
 
-#libnl (linux && optional)
+#libnl (todo)
 
 git clone git://github.com/tgraf/libnl.git
 cd libnl || exit 1
@@ -43,7 +43,7 @@ make install
 cd ..
 
 
-#libev (all)
+#libev (todo)
 
 wget http://dist.schmorp.de/libev/Attic/libev-4.04.tar.gz
 tar xfz libev-4.04.tar.gz
@@ -67,7 +67,7 @@ make
 make install
 cd ..
 
-#Cython (all)
+#Cython (todo)
 
 #We have to use cython >= 0.15 as previous releases do not support Python3.2 __hash__'s Py_Hash_type for x86.
 wget http://cython.org/release/Cython-0.16.tar.gz
@@ -77,7 +77,7 @@ cd Cython-0.16 || exit 1
 cd ..
 
 
-#udns (!ubuntu)
+#udns 
 #udns does not use autotools to build.
 wget http://www.corpit.ru/mjt/udns/old/udns_0.0.9.tar.gz
 tar xfz udns_0.0.9.tar.gz
@@ -94,7 +94,7 @@ cd -
 cd ..
 
 
-#libpcap (most)
+#libpcap 
 
 wget http://www.tcpdump.org/release/libpcap-1.1.1.tar.gz
 tar xfz libpcap-1.1.1.tar.gz
@@ -105,7 +105,7 @@ make install
 cd ..
 
 
-# FINALLY!!!!
+# FINAl !!!!
 
 git clone git://git.carnivore.it/dionaea.git dionaea
 cd dionaea || exit 1

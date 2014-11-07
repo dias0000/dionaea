@@ -1,13 +1,5 @@
 #!/bin/bash
 
-
-aptitude install libudns-dev libglib2.0-dev libssl-dev libcurl4-openssl-dev \
-libreadline-dev libsqlite3-dev python-dev \
-libtool automake autoconf build-essential \
-subversion git-core \
-flex bison \
-pkg-config p0f
-
 apt-get install unzip
 apt-get install make
 apt-get install git
@@ -16,6 +8,15 @@ apt-get install python-netaddr
 apt-get install aptitude
 apt-get install g++
 apt-get install npm
+
+aptitude install libudns-dev libglib2.0-dev libssl-dev libcurl4-openssl-dev \
+libreadline-dev libsqlite3-dev python-dev \
+libtool automake autoconf build-essential \
+subversion git-core \
+flex bison \
+pkg-config p0f
+
+
 
 mkdir /opt/dionaea
 
